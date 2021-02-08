@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-      <Weather />
+      <Weather defaultCity="Vienna"/>
         <div className="footer-container">
         <small className="link">
           <a className="github-link"
@@ -19,7 +19,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
             >
-            Anna Kassai
+            <strong>Anna Kassai</strong>
             </a>
         </small>
       </div>
