@@ -33,15 +33,15 @@ export default function Weather() {
     <div className="innerContainer">
     <div className="row">
       <div className="col-12">
-        <h1 className="data">Vienna</h1>
-        <h3 className="data">21:21</h3>
+        <h1 className="current-city">Vienna</h1>
+        <h3 className="current-time">21:21</h3>
       </div>
     </div>
     </div>
     <div className="container">
       <div className="row">
         <div className="col-6">
-          <h5 className="data">Sunny</h5>
+          <h5 className="description">Sunny</h5>
           <h5 className="local-temperature">
             <ReactAnimatedWeather
               icon = 'CLEAR_DAY'
@@ -50,12 +50,14 @@ export default function Weather() {
               animate = {true}
               className="fasfasun"
             />
-            <span className="temperature">22°C</span>
+            <span className="local-temperature">7</span>
             <span className="units"> °C | °F </span>
           </h5>
-          <h5 className="data"><i class="fas fa-bolt"></i> Pressure:1111 hPa</h5>
-          <h5 className="data"><i class="fas fa-tint"></i> Humidity:17 %</h5>        
-          <h5 className="data"><i class="fas fa-wind"></i> Wind:33 km/h</h5>
+          <div className="additional-info">
+            <h5 className="data"><i class="fas fa-bolt"></i> Pressure:1111 hPa</h5>
+            <h5 className="data"><i class="fas fa-tint"></i> Humidity:17 %</h5>        
+            <h5 className="data"><i class="fas fa-wind"></i> Wind:33 km/h</h5>
+          </div>
         </div>
         <div className="col-1">
             <p>0:00</p>
