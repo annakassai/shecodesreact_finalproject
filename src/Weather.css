@@ -29,7 +29,7 @@ h5, p {
 }
   
 .Weather {
-  margin: 18px auto;
+  margin: 30px auto;
   margin-bottom: 2px;
   padding: 18px;
   max-width: 450px;
@@ -103,7 +103,7 @@ h5, p {
 }
 
 .col-2,.col-1{
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px;
 }
 
