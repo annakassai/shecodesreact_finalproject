@@ -1,7 +1,6 @@
 import React, {useState} from "react"; 
 import './Weather.css';
 import axios from "axios";
-import ReactAnimatedWeather from 'react-animated-weather';
 import WeatherInfo from './WeatherInfo';
 
 export default function Weather(props) {
@@ -15,13 +14,7 @@ function handleResponse(response){
     city:response.data.name,
     date:new Date(response.data.dt*1000),
     description:response.data.weather[0].description,
-    iconUrl:<ReactAnimatedWeather
-    icon = 'CLEAR_DAY'
-    color = 'goldenrod'
-    size = {50}
-    animate = {true}
-    className="fasfasun"
-    />,
+    icon:response.data.weather[0].icon,
     temperature:response.data.main.temp,
     pressure:response.data.main.pressure,
     humidity:response.data.main.humidity, 
