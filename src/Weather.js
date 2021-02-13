@@ -1,11 +1,12 @@
 import React, {useState} from "react"; 
 import './Weather.css';
 import axios from "axios";
-import FormattedDate from './FormattedDate';
 import ReactAnimatedWeather from 'react-animated-weather';
+import WeatherInfo from './WeatherInfo';
 
 export default function Weather(props) {
 const [weatherData, setWeatherData] = useState({ready:false});
+const [city, setCity] = useState(props.defaultCity);  
 
 function handleResponse(response){
   console.log(response.data)
@@ -28,11 +29,28 @@ function handleResponse(response){
   })
 }
 
+function search(){
+  const apiKey = "1fd01a094c047ffda9a1022db88d180b";
+  let units = `metric`;
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let apiUrl = `${apiEndpoint}?q=${city}&units=${units}&appid=${apiKey}`;
+  axios.get(apiUrl).then(handleResponse);
+}
+
+function handleSubmit(event){
+  event.preventDefault();
+  search(); 
+}
+
+function handleCityChange(event){
+  setCity(event.target.value); 
+}
+
 if (weatherData.ready) {
   return (
     <div className="Weather">
      <div className="container">
-       <form> 
+       <form onSubmit={handleSubmit}> 
         <div className="row">
           <div className="col-6">
             <input
@@ -41,6 +59,7 @@ if (weatherData.ready) {
               placeholder="🔍 Search for a city"
               autoFocus={true}
               autoComplete="off"
+              onChange= {handleCityChange}
             />
           </div>
           <div className="col-3">
@@ -56,87 +75,12 @@ if (weatherData.ready) {
          </div> 
         </form>
       </div>
-    <div className="innerContainer">
-    <div className="row">
-      <div className="col-12">
-        <h1 className="current-city">{weatherData.city}</h1>
-        <h3 className="current-time"><FormattedDate date={weatherData.date}/></h3>
-      </div>
-    </div>
-    </div>
-    <div className="container">
-      <div className="row">
-        <div className="col-6">
-          <h5 className="text-capitalize">{weatherData.description}</h5>
-          <h5 className="local-temperature">
-            {weatherData.iconUrl}
-            <span className="local-temperature">{Math.round(weatherData.temperature)}</span>
-            <span className="units"> °C | °F </span>
-          </h5>
-          <div className="additional-info">
-            <h5 className="data"><i class="fas fa-bolt"></i> Pressure: {weatherData.pressure} hPa</h5>
-            <h5 className="data"><i class="fas fa-tint"></i> Humidity: {weatherData.humidity} %</h5>        
-            <h5 className="data"><i class="fas fa-wind"></i> Wind: {Math.round(weatherData.wind)}km/h</h5>
-          </div>
-        </div>
-        <div className="col-1">
-            <p>0:00</p>
-            <p>3:00</p>
-            <p>6:00</p>
-            <p>9:00</p>
-            <p>0:00</p>
-        </div> 
-        <div className="col-2">
-        <ReactAnimatedWeather
-          icon = 'CLEAR_DAY'
-          color = 'goldenrod'
-          size = {25}
-          animate = {true}
-        />
-         <ReactAnimatedWeather
-          icon = 'PARTLY_CLOUDY_DAY'
-          color = 'grey'
-          size = {25}
-          animate = {true}
-        />
-         <ReactAnimatedWeather
-          icon = 'CLOUDY'
-          color = 'darkblue'
-          size = {25}
-          animate = {true}
-        />
-        <ReactAnimatedWeather
-          icon = 'CLEAR_DAY'
-          color = 'goldenrod'
-          size = {25}
-          animate = {true}
-        />
-         <ReactAnimatedWeather
-          icon = 'PARTLY_CLOUDY_DAY'
-          color = 'grey'
-          size = {25}
-          animate = {true}
-        />
-        </div>    
-        <div className="col-1">
-          <p>5°C</p>
-          <p>1°C</p>
-          <p>2°C</p>
-          <p>5°C</p>
-          <p>4°C</p>
-        </div>
-      </div>
-    </div>
+    <WeatherInfo data={weatherData}/>      
   </div>
   );
 
   } else {
-   const apiKey = "1fd01a094c047ffda9a1022db88d180b";
-   let units = `metric`;
-   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-   let apiUrl = `${apiEndpoint}?q=${props.defaultCity}&units=${units}&appid=${apiKey}`;
-   axios.get(apiUrl).then(handleResponse);
-
+   search(); 
    return "Loading...";
   };
 }
