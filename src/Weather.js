@@ -1,6 +1,7 @@
 import React, {useState} from "react"; 
 import './Weather.css';
 import axios from "axios";
+import FormattedDate from './FormattedDate';
 import ReactAnimatedWeather from 'react-animated-weather';
 
 export default function Weather(props) {
@@ -11,7 +12,7 @@ function handleResponse(response){
   setWeatherData({
     ready: true,
     city:response.data.name,
-    date:'Sunday 21:21',
+    date:new Date(response.data.dt*1000),
     description:response.data.weather[0].description,
     iconUrl:<ReactAnimatedWeather
     icon = 'CLEAR_DAY'
@@ -59,7 +60,7 @@ if (weatherData.ready) {
     <div className="row">
       <div className="col-12">
         <h1 className="current-city">{weatherData.city}</h1>
-        <h3 className="current-time">{weatherData.date}</h3>
+        <h3 className="current-time"><FormattedDate date={weatherData.date}/></h3>
       </div>
     </div>
     </div>
