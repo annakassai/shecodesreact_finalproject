@@ -1,0 +1,23 @@
+p {
+  font-family: 'Public Sans', sans-serif;
+  text-align: left;
+  line-height: 1.2;
+  color: #464141;
+}
+
+.col-2{
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.WeatherForecast{
+  text-align: center;
+}
+
+canvas{
+  display: block;
+  margin:5px auto; 
+  height: 30px;
+  width: 30px;
+}
+  
