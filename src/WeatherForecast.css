@@ -1,3 +1,6 @@
-.WeatherForecast{
-  text-align: center;
+p {
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.2;
+  color: #464141;
 }
+

@@ -5,13 +5,14 @@ p {
   color: #464141;
 }
   
-.col-2{
+.WeatherForecastPreview{
   margin-left: 10px;
-  margin-top: 10px;
+  margin-bottom:2px;
+  text-align: center;
   padding: 5px;
 }
   
-canvas{
+canvas {
   display: block;
   margin:5px auto; 
   height: 30px;
