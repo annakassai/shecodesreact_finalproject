@@ -68,7 +68,7 @@ if (weatherData.ready) {
             <input
               type="search"
               className="searchengine"
-              placeholder="🔍 Search for a city"
+              placeholder=" Search for a city"
               autoFocus={true}
               autoComplete="off"
               onChange= {handleCityChange}
