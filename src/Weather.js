@@ -20,6 +20,8 @@ function handleResponse(response){
     pressure:response.data.main.pressure,
     humidity:response.data.main.humidity, 
     wind:response.data.wind.speed,
+    lon: response.data.coord.lon,
+    lat: response.data.coord.lat,
   })
 }
 
@@ -40,6 +42,22 @@ function handleCityChange(event){
   setCity(event.target.value); 
 }
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(currentLocation);   
+}
+
+function currentLocation(response) {
+  let latitude = response.coords.latitude;
+  let longitude = response.coords.longitude;
+  let apiKey = "1fd01a094c047ffda9a1022db88d180b";
+  let units = "metric";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let apiUrl = `${apiEndpoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(handleResponse);
+  
+}
+
 if (weatherData.ready) {
   return (
     <div className="Weather">
@@ -57,12 +75,17 @@ if (weatherData.ready) {
             />
           </div>
           <div className="col-3">
-            <button type="submit" className="btn btn-secondary">
+            <button 
+              type="submit" 
+              className="btn btn-secondary">
               Search
             </button>
           </div>
           <div className="col-3">
-            <button type="submit" className="btn btn-warning">
+            <button 
+              type="submit" 
+              className="btn btn-warning" 
+              onClick={getCurrentLocation}>
               Locate
             </button>
           </div>
