@@ -1,21 +1,20 @@
-p {
-  font-family: 'Public Sans', sans-serif;
-  text-align: left;
-  line-height: 1.2;
-  color: #464141;
-}
-  
 .WeatherForecastPreview{
-  margin-left: 10px;
-  margin-bottom:2px;
+  display: block;
+  margin-left: 2px;
+  padding: 2px;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
   text-align: center;
-  padding: 5px;
+  line-height: 1.5;
+  color: #464141;
 }
   
 canvas {
   display: block;
-  margin:5px auto; 
-  height: 30px;
-  width: 30px;
+  margin-top:4px;
+  margin-left: 2px;
+  margin-bottom:4px;  
+  height: 25px;
+  width: 25px;
 }
     
