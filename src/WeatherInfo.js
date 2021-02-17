@@ -10,7 +10,7 @@ export default function WeatherInfo(props){
     <div className="innerContainer">
     <div className="row">
       <div className="col-12">
-        <h1 className="current-city">{props.data.city}</h1>
+        <h1 className="current-city">{props.data.city}, {props.data.country}</h1>
         <h3 className="current-time"><FormattedDate date={props.data.date}/></h3>
       </div>
     </div>

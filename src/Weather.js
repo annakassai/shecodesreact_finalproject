@@ -13,6 +13,7 @@ function handleResponse(response){
   setWeatherData({
     ready: true,
     city:response.data.name,
+    country:response.data.sys.country, 
     date:new Date(response.data.dt*1000),
     description:response.data.weather[0].description,
     icon:response.data.weather[0].icon,

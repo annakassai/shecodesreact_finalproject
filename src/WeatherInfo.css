@@ -1,5 +1,6 @@
-h5, p {
-  font-family: 'Public Sans', sans-serif;
+h5,
+p {
+  font-family: "Public Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-align: left;
@@ -8,11 +9,11 @@ h5, p {
 }
 
 .float-left canvas {
-  margin-top:20px;
-  margin-left:2px;
+  margin-top: 20px;
+  margin-left: 2px;
   padding: 0;
-  height:50px; 
-  width:50px;
+  height: 50px;
+  width: 50px;
 }
 
 .description {
@@ -25,28 +26,36 @@ h5, p {
 
 .local-temperature {
   margin-left: 5px;
-  margin-right:0;
+  margin-right: 0;
   font-size: 54px;
   font-weight: 350px;
 }
-  
-.units{
-  margin-right:0;
+
+.units {
+  margin-right: 0;
   font-size: 14px;
   position: relative;
   top: -32px;
   color: #464141;
   cursor: default;
-} 
+}
 
-a:hover{
+a {
+  color: #1776dc;
+}
+
+a:hover {
   text-decoration: none;
 }
 
-.additional-info{
-  margin-top: 30px;
+.additional-info {
+  margin-top: 34px;
+  margin-left: 34px;
   font-weight: 400;
   font-size: 14px;
-  margin-left:30px;
 }
-    
+
+.fa-wind{
+  font-weight: 800;
+  margin-left: -4px;
+}
