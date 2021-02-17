@@ -12,15 +12,32 @@ export default function FormattedDate(props) {
        "Saturday",  
     ]; 
 
-    let day= days[props.date.getDay()]; 
-    let hours= props.date.getHours();
+    let months = [
+       "Jan", 
+       "Feb", 
+       "Mar", 
+       "Apr", 
+       "May", 
+       "Jun", 
+       "Jul", 
+       "Aug", 
+       "Sep", 
+       "Oct", 
+       "Nov", 
+       "Dec", 
+    ]
+
+    let date = props.date.getDate();
+    let month = months[props.date.getMonth()]; 
+    let day = days[props.date.getDay()]; 
+    let hours = props.date.getHours();
     if (hours < 10) {
         hours = `0${hours}`; 
      }
-    let minutes= props.date.getMinutes(); 
+    let minutes = props.date.getMinutes(); 
     if (minutes < 10) {
        minutes = `0${minutes}`; 
     }
 
-    return `${day}, ${hours}:${minutes}`; 
+    return `${day} | ${month} ${date} | ${hours}:${minutes}`; //last updated  
 }
