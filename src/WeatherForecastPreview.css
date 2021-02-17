@@ -1,19 +1,25 @@
 .WeatherForecastPreview{
   display: block;
-  margin-left: 8px;
-  padding: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 3px 6px;
   font-family: 'Public Sans', sans-serif;
   font-size: 15px;
   text-align: center;
   line-height: 1.5;
   color: #2a292c;
 }
+
+.col-2{
+  padding: 4px 14px;  
+}
   
 canvas {
   display: block;
   margin-top:4px;
   margin-left: 4px;
-  margin-bottom:4px;  
+  margin-bottom:4px;
+  padding: 4px;  
   height: 25px;
   width: 25px;
 }
