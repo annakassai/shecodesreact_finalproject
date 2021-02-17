@@ -33,9 +33,9 @@ export default function WeatherInfo(props){
           </div>
           <div className="col-6">
             <div className="additional-info">
-              <h5 className="data"><i className="fas fa-bolt"></i> Pressure: {props.data.pressure} hPa</h5>
               <h5 className="data"><i className="fas fa-tint"></i> Humidity: {props.data.humidity} %</h5>        
-              <h5 className="data"><i className="fas fa-wind"></i> Wind: {Math.round(props.data.wind)}km/h</h5>
+              <h5 className="data"><i className="fas fa-wind"></i> Wind: {Math.round(props.data.wind)} km/h</h5>
+              <h5 className="data"><i className="fas fa-bolt"></i> Pressure: {props.data.pressure} hPa</h5>
             </div>
           </div>
         </div>

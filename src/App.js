@@ -19,7 +19,13 @@ function App() {
             target="_blank"
             rel="noreferrer"
             >
-            <strong>Anna Kassai</strong>
+            Anna Kassai 
+            </a> hosted on
+            <a
+            className="netlify-link"
+            href="https://confident-dijkstra-8805d3.netlify.app"
+            target="_blank"
+            rel="noreferrer"> Netlify
             </a>
         </small>
       </div>

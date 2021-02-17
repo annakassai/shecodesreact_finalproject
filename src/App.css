@@ -1,11 +1,3 @@
-p a {
-  font-size: 10px;
-  font-family: 'Public Sans', sans-serif;
-  text-align: left;
-  line-height: 1;
-  color: #464141;
-}
-
 .link {
   display: block;
   text-align: left;
@@ -13,9 +5,15 @@ p a {
   padding-left: 10px;
   max-width: 450px;
   max-height: fit-content;
+  font-size: 12px;
+  font-weight: 600px;
+  font-family: 'Public Sans', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  color: #464141;
 }
 
-.github-link {
+.github-link,.netlify-link {
   text-decoration: none;
   color: #1776dc;
 }
@@ -25,7 +23,7 @@ p a {
   color: #464141;
 }
 
-.github-link:hover{
+.github-link:hover,.netlify-link:hover{
   text-decoration: underline;
   color: #1776dc;
   opacity: 0.9;
