@@ -99,6 +99,6 @@ if (weatherData.ready) {
   );
   } else {
    search(); 
-   return "Loading...";
+   return "Loading weather data...";
   };
 }
