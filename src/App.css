@@ -10,7 +10,7 @@
   font-family: 'Public Sans', sans-serif;
   text-align: left;
   line-height: 1.5;
-  color: #464141;
+  color: #2a292c;
 }
 
 .github-link,.netlify-link {
@@ -20,7 +20,7 @@
 
 .linkedin-link {
   text-decoration: none;
-  color: #464141;
+  color: #2a292c;
 }
 
 .github-link:hover,.netlify-link:hover{
@@ -32,7 +32,7 @@
 
 .linkedin-link:hover {
   text-decoration: underline;
-  color: #464141;
+  color:#2a292c;
   opacity: 0.9;
   cursor: pointer;
 }

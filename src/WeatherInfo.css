@@ -5,7 +5,7 @@ p {
   font-size: 14px;
   text-align: left;
   line-height: 1.2;
-  color: #464141;
+  color: #2a292c;
 }
 
 .float-left canvas {
@@ -29,6 +29,7 @@ p {
   margin-right: 0;
   font-size: 54px;
   font-weight: 350px;
+  color: #2a292c;
 }
 
 .units {
@@ -36,7 +37,7 @@ p {
   font-size: 14px;
   position: relative;
   top: -32px;
-  color: #464141;
+  color: #2a292c;
   cursor: default;
 }
 
@@ -49,6 +50,7 @@ a:hover {
 }
 
 .additional-info {
+  color: #2a292c;
   margin-top: 34px;
   margin-left: 34px;
   font-weight: 400;
