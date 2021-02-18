@@ -7,19 +7,20 @@ function App() {
       <div className="container">
       <Weather defaultCity="Vienna"/>
         <div className="footer-container">
-        <small className="link">
-          <a className="github-link"
-            href="https://github.com/annakassai/shecodesreact_finalproject"
-            target="_blank"
-            rel="noreferrer"
-            >
-            Open-source code</a>, by <a
+        <small className="link">Coded by 
+            <a 
             className="linkedin-link"
             href="https://www.linkedin.com/in/annakassai91/"
             target="_blank"
             rel="noreferrer"
+            > Anna Kassai 
+            </a> open sourced on <a
+            className="github-link"
+            href="https://github.com/annakassai/shecodesreact_finalproject"
+            target="_blank"
+            rel="noreferrer"
             >
-            Anna Kassai 
+            GitHub
             </a> hosted on
             <a
             className="netlify-link"

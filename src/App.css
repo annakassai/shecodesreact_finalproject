@@ -13,26 +13,15 @@
   color: #2a292c;
 }
 
-.github-link,.netlify-link {
+.linkedin-link,.github-link,.netlify-link {
   text-decoration: none;
-  color: #1776dc;
-}
-
-.linkedin-link {
-  text-decoration: none;
-  color: #2a292c;
-}
-
-.github-link:hover,.netlify-link:hover{
-  text-decoration: underline;
-  color: #1776dc;
-  opacity: 0.9;
-  cursor: pointer;
-}
-
-.linkedin-link:hover {
-  text-decoration: underline;
+  font-weight: 600;
   color:#2a292c;
+}
+
+.linkedin-link:hover,.github-link:hover,.netlify-link:hover{
+  text-decoration: underline;
+  color: #2a292c;
   opacity: 0.9;
   cursor: pointer;
 }
