@@ -1,5 +1,6 @@
 .WeatherForecastPreview{
   display: block;
+  margin-top: 15px;
   margin-left: 6px;
   margin-right:2px;
   padding: 4px;
@@ -8,6 +9,8 @@
   text-align: center;
   line-height: 1.5;
   color: #2a292c;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .col-2{

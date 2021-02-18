@@ -11,6 +11,7 @@
   text-align: center;
   line-height: 1.5;
   color: #2a292c;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .linkedin-link,.github-link,.netlify-link {

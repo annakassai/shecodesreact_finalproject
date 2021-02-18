@@ -14,7 +14,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
             > Anna Kassai 
-            </a> open sourced on <a
+            </a> open-sourced on <a
             className="github-link"
             href="https://github.com/annakassai/shecodesreact_finalproject"
             target="_blank"
