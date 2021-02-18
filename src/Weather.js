@@ -20,9 +20,9 @@ function handleResponse(response){
     description:response.data.weather[0].description,
     icon:response.data.weather[0].icon,
     temperature:response.data.main.temp,
-    pressure:response.data.main.pressure,
     humidity:response.data.main.humidity, 
     wind:response.data.wind.speed,
+    pressure:response.data.main.pressure,
     lon: response.data.coord.lon,
     lat: response.data.coord.lat,
   })

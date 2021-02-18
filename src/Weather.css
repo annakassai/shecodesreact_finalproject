@@ -11,7 +11,7 @@ h3 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 h3 {
@@ -58,9 +58,10 @@ h3 {
   margin-top: 5px;
   margin-left: 14px;
   margin-bottom: 4px;
-  padding: 5px 14px;
-  border: 1px solid #656269; 
+  padding: 5px 14px; 
   border-radius: 16px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
   transition: all 200ms ease;
 }
@@ -70,8 +71,9 @@ h3 {
   margin-left:-2px;
   margin-bottom: 4px;
   padding: 5px 14px;
-  border: 1px solid #d69e11; 
   border-radius: 16px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
   transition: all 200ms ease;
 }  

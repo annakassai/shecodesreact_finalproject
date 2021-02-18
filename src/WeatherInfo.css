@@ -8,6 +8,10 @@ p {
   color: #2a292c;
 }
 
+.wrapper{
+  margin-left:6px;
+}
+
 .float-left canvas {
   margin-top: 20px;
   margin-left: 2px;
@@ -17,7 +21,8 @@ p {
 }
 
 .description {
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-left: 4px;
 }
 
 .description:first-letter {

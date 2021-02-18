@@ -18,18 +18,20 @@ export default function WeatherInfo(props){
     <div className="container">
       <div className="row">
         <div className="col-6">
-          <h5 className="description">{props.data.description}</h5>
-          <div className="float-left">
-            <WeatherIcon 
-            code={props.data.icon} 
-            alt={props.data.description}
-            />  
-          </div>
-          <div className="temperature">
-            <WeatherTemperature 
-            celsius={props.data.temperature}
-            />
-          </div>
+          <div className="wrapper">
+            <h5 className="description">{props.data.description}</h5>
+              <div className="float-left">
+                <WeatherIcon 
+                code={props.data.icon} 
+                alt={props.data.description}
+                />  
+              </div>
+              <div className="temperature">
+                <WeatherTemperature 
+                celsius={props.data.temperature}
+                />
+              </div>
+            </div>
           </div>
           <div className="col-6">
             <div className="additional-info">
