@@ -1,14 +1,14 @@
 .link {
   display: block;
   text-align: left;
-  margin: 2px auto;
+  margin: 0 auto;
   max-width: 440px;
   max-height: fit-content;
   font-size: 11px;
   font-weight: 580;
   font-family: 'Public Sans', sans-serif;
   text-align: center;
-  line-height: 1.5;
+  line-height: 2;
   color: #2a292c;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
