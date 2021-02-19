@@ -1,5 +1,5 @@
 import React, {useState} from "react"; 
-import './Weather.css';
+import './WeatherSearchForm.css';
 import axios from "axios";
 import WeatherInfo from './WeatherInfo';
 import WeatherForecast from './WeatherForecast'; 
@@ -20,9 +20,10 @@ function handleResponse(response){
     description:response.data.weather[0].description,
     icon:response.data.weather[0].icon,
     temperature:response.data.main.temp,
-    humidity:response.data.main.humidity, 
+    humidity:response.data.main.humidity,
+    visibility:response.data.visibility,  
     wind:response.data.wind.speed,
-    pressure:response.data.main.pressure,
+    clouds:response.data.clouds.all,
     lon: response.data.coord.lon,
     lat: response.data.coord.lat,
   })

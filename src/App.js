@@ -1,11 +1,11 @@
 import './App.css';
-import Weather from './Weather';
+import WeatherSearchForm from './WeatherSearchForm';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-      <Weather defaultCity="Vienna"/>
+      <WeatherSearchForm defaultCity="Vienna"/>
         <div className="footer-container">
         <small className="link">Coded by 
             <a 
@@ -14,14 +14,14 @@ function App() {
             target="_blank"
             rel="noreferrer"
             > Anna Kassai 
-            </a> open-sourced on <a
+            </a>, open-sourced on <a
             className="github-link"
             href="https://github.com/annakassai/shecodesreact_finalproject"
             target="_blank"
             rel="noreferrer"
             >
             GitHub
-            </a> hosted on
+            </a>, hosted on
             <a
             className="netlify-link"
             href="https://confident-dijkstra-8805d3.netlify.app"
