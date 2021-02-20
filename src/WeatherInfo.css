@@ -12,7 +12,7 @@ h5 {
   margin: 10px;
   margin-bottom: 14px; 
   padding: 6px;
-  max-width: 450px;
+  max-width: 440px;
   max-height: fit-content;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
@@ -23,7 +23,7 @@ h5 {
 }
 
 .wrapper{
-  margin-left:2px;
+  margin-left:6px;
 }
 
 .float-left canvas {
@@ -74,6 +74,9 @@ a:hover {
   margin-top: 20px;
   margin-left: 8px;
   font-weight: 400;
+}
+.fa-tint {
+  margin-left: -2px;
 }
 
 .fa-wind {
