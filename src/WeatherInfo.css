@@ -9,8 +9,8 @@ h5 {
 }
 
 .innerContainer {
-  margin: 10px;
-  margin-bottom: 14px; 
+  margin: 16px;
+  margin-top: 10px; 
   padding: 6px;
   max-width: 440px;
   max-height: fit-content;
