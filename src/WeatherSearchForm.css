@@ -76,3 +76,25 @@ h3 {
   transition: all 200ms ease;
 }
 
+@media (max-width:576px) {
+  h1, h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h3{
+    font-size: 14px;
+  }
+
+ .btn-warning {
+   display: none; 
+ }
+
+ .btn-secondary {
+   margin-left: 60px;
+ }
+}

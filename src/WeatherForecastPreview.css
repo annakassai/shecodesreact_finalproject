@@ -25,4 +25,13 @@ canvas {
   height: 25px;
   width: 25px;
 }
-    
+
+@media (max-width:576px) {
+  .WeatherForecastPreview {
+    font-size: 13px;
+  }
+
+  .col-2{
+    padding: 0 2px;  
+  }
+}

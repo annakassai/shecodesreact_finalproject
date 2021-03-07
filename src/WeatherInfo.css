@@ -91,3 +91,27 @@ a:hover {
 .fa-eye {
   margin-left: -5px;
 }
+
+@media (max-width:576px) {
+  .additional-info{
+    margin-left: 4px;
+  }
+  
+  h5 {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .float-left canvas {
+    height: 30px;
+    width: 30px;
+  }
+
+  .local-temperature {
+    font-size: 44px;
+  }
+
+  .units {
+    top: -24px;
+  }
+}
